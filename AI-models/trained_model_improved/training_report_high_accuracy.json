@@ -1,0 +1,82 @@
+{
+  "training_date": "2025-11-17 16:23:19",
+  "project_info": {
+    "title": "Fake Product Detection using EfficientNetB3 and Blockchain",
+    "model": "EfficientNetB3 - High-Accuracy for Fake Product Detection",
+    "status": "FAIL - Targets Not Met"
+  },
+  "dataset": {
+    "total_samples": 12378,
+    "training_samples": 9903,
+    "validation_samples": 2475,
+    "class_distribution": {
+      "fake": 0,
+      "real": 1
+    }
+  },
+  "training_config": {
+    "batch_size": 24,
+    "epochs_phase1": 50,
+    "epochs_phase2": 14,
+    "learning_rate_phase1": 0.0001,
+    "learning_rate_phase2": 2e-05,
+    "loss_function": "Focal Loss (alpha=0.75, gamma=2.0)",
+    "class_weights": {
+      "0": 1.2497980613893376,
+      "1": 0.8334231079989227
+    },
+    "unfrozen_layers": 50
+  },
+  "project_requirements": {
+    "fake_recall_target": "\u226590% (PRIMARY)",
+    "real_recall_target": "\u226580% (SECONDARY)",
+    "overall_accuracy_target": "Best effort (lower priority)",
+    "overall_precision_target": "Best effort (lower priority)",
+    "priority": "Maximize fake detection - critical for catching counterfeit products"
+  },
+  "achieved_performance": {
+    "overall_accuracy": "76.12%",
+    "overall_precision": "76.54%",
+    "overall_recall": "76.12%",
+    "fake_recall": "74.14%",
+    "real_recall": "77.44%",
+    "fake_precision": "68.66%",
+    "real_precision": "81.79%",
+    "fake_f1": "71.30%",
+    "real_f1": "79.56%"
+  },
+  "technical_metrics": {
+    "roc_auc": 0.16358296772438186,
+    "avg_precision_fake": 0.7399937703834205,
+    "optimal_threshold": 0.291748046875,
+    "decision_threshold_used": 0.3
+  },
+  "improvements_applied": [
+    "Balanced Focal Loss for equal class importance",
+    "Class weights for handling class imbalance",
+    "Two-phase training with 50-layer fine-tuning",
+    "Enhanced data augmentation for better generalization",
+    "Larger dense layers (1024\u2192512\u2192256) for feature learning",
+    "L2 regularization to prevent overfitting",
+    "Optimized callbacks with patience tuning",
+    "Comprehensive evaluation metrics"
+  ],
+  "raw_performance_data": {
+    "overall": {
+      "accuracy": 0.7612121212121212,
+      "precision": 0.7654031166709027,
+      "recall": 0.7612121212121212
+    },
+    "fake_class": {
+      "recall": 0.7414141414141414,
+      "precision": 0.686623012160898,
+      "f1_score": 0.7129674599320058
+    },
+    "real_class": {
+      "recall": 0.7744107744107744,
+      "precision": 0.817923186344239,
+      "f1_score": 0.7955724662746455
+    },
+    "targets_met": false
+  }
+}

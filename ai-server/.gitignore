@@ -1,0 +1,40 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+
+# Model files (large files - if storing in git use LFS)
+*.h5
+*.hdf5
+*.pkl
+*.pth
+
+# Uploads and temp files
+uploads/
+test_images/
+*.tmp

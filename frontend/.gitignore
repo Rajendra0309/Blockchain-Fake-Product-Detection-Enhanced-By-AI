@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+
+# Vite
+.vite/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Contract artifacts (copied from build)
+public/contracts/*.json

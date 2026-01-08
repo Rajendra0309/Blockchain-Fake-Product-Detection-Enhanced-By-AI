@@ -1,0 +1,1 @@
+This public folder serves static assets at the Vite dev server root. The contracts/product.json is expected to be copied here from ../../build/contracts/product.json.

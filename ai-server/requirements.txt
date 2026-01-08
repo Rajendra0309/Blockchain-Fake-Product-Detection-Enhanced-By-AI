@@ -1,0 +1,17 @@
+flask==3.0.0
+flask-cors==4.0.0
+tensorflow==2.10.0
+pillow==10.1.0
+numpy==1.23.5
+requests==2.31.0
+
+# Installation Instructions:
+# ========================
+# If using the same conda environment as training (tf210):
+#   conda activate tf210
+#   pip install flask flask-cors requests
+#
+# If creating a new environment:
+#   conda create -n ai-server python=3.9
+#   conda activate ai-server
+#   pip install -r requirements.txt

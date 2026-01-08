@@ -1,0 +1,26 @@
+{
+  "focal_alpha": 0.75,
+  "focal_gamma": 2.0,
+  "decision_threshold": 0.3,
+  "learning_rate_phase1": 0.0001,
+  "learning_rate_phase2": 2e-05,
+  "batch_size": 24,
+  "image_size": [
+    300,
+    300
+  ],
+  "class_names": [
+    "fake",
+    "real"
+  ],
+  "unfrozen_layers": 50,
+  "phase": "phase2_high_accuracy",
+  "mixed_precision": "mixed_float16",
+  "model_name": "HighAccuracyFakeDetection_B3",
+  "target_metrics": {
+    "fake_recall": ">80%",
+    "real_recall": ">80%",
+    "overall_accuracy": ">80%",
+    "overall_precision": ">80%"
+  }
+}

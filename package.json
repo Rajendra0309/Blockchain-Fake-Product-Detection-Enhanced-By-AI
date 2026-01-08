@@ -1,0 +1,23 @@
+{
+  "name": "truetag.ai",
+  "version": "2.0.0",
+  "description": "Blockchain based fake product identification (Smart contracts + React frontend)",
+  "private": true,
+  "scripts": {
+    "test": "echo 'No tests yet' && exit 0",
+    "migrate": "truffle migrate",
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "copy-contracts": "shx mkdir -p frontend/public/contracts && shx cp build/contracts/product.json frontend/public/contracts/product.json",
+    "dev": "npm run migrate && npm run copy-contracts && npm run frontend:dev"
+  },
+  "devDependencies": {
+    "html5-qrcode": "^2.2.0",
+    "shx": "^0.4.0"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.15",
+    "cors": "^2.8.5"
+  }
+}

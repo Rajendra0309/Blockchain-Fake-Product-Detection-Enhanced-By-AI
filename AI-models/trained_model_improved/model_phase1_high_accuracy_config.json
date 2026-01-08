@@ -1,0 +1,18 @@
+{
+  "focal_alpha": 0.75,
+  "focal_gamma": 2.0,
+  "decision_threshold": 0.3,
+  "learning_rate": 0.0001,
+  "batch_size": 24,
+  "image_size": [
+    300,
+    300
+  ],
+  "class_names": [
+    "fake",
+    "real"
+  ],
+  "phase": "phase1_high_accuracy",
+  "mixed_precision": "mixed_float16",
+  "model_name": "HighAccuracyFakeDetection_B3"
+}

@@ -1,0 +1,31 @@
+# Large model files
+*.h5
+*.hdf5
+*.pkl
+*.pth
+*.pb
+
+# Training data
+dataset/
+data/
+images/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Training outputs
+logs/
+checkpoints/
+saved_models/
+
+# CSV large files
+*.csv
+
+# Temporary files
+*.tmp
+.cache/
