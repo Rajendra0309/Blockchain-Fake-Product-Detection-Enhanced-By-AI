@@ -1,4 +1,4 @@
-# Blockchain Enabled Fake Product Detection Enhanced by AI
+# Blockchain-Enabled Fake Product Detection Enhanced by AI
 
 ## Overview
 Dual verification system combining blockchain immutability with AI visual inspection to authenticate products and detect counterfeits.
